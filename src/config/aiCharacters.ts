@@ -157,4 +157,3 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 
   ];
 }
-
