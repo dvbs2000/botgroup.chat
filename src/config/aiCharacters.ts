@@ -2,22 +2,22 @@
 export const modelConfigs = [
   {
     model: "qwen-plus",
-    apiKey: "sk-6eb96a2f22704637ba8e498ea834dc82", // 这里存储环境变量的 key 名称
+    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "deepseek-v3",
-    apiKey: "sk-6eb96a2f22704637ba8e498ea834dc82",
+    apiKey: "DASHSCOPE_API_KEY",
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "hunyuan-standard",
-    apiKey: "sk-dOrflbhoY1LGPWZjajTJ2PogXsCpGX9fWCWMaNNiGQVXC3US",
+    apiKey: "HUNYUAN_API_KEY",
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
     model: "doubao-1-5-pro-256k-250115",//火山引擎接入点（改成自己的）
-    apiKey: "8b93cb64-5a2c-42a2-941a-c67dc408ffe1",
+    apiKey: "ARK_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   }
 ] as const;
