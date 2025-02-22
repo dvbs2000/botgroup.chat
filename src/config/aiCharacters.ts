@@ -24,6 +24,11 @@ export const modelConfigs = [
     model: "DeepSeek R1",
     apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://api.ppinfra.com/v3/openai"
+  },
+   {
+    model: "DeepSeek V3",
+    apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://api.ppinfra.com/v3/openai"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
@@ -85,7 +90,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai3', 
       name: "DeepSeek R1", 
       personality: "DeepSeek R1",
-      model: "DeepSeek R1",
+      model: modelConfigs[4].model,,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek R1"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，
 回复时要：
