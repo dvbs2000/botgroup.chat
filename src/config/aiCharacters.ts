@@ -21,9 +21,9 @@ export const modelConfigs = [
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "DeepSeek R1",
+    model: "DeepSeek: DeepSeek R1 (Community)",
     apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://api.ppinfra.com/v3"
+    baseURL: "https://api.ppinfra.com/v3/openai"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
