@@ -2,33 +2,23 @@
 export const modelConfigs = [
   {
     model: "qwen-plus",
-    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
+    apiKey: "sk-6eb96a2f22704637ba8e498ea834dc82", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "deepseek-v3",
-    apiKey: "DASHSCOPE_API_KEY",
+    apiKey: "sk-6eb96a2f22704637ba8e498ea834dc82",
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "hunyuan-standard",
-    apiKey: "HUNYUAN_API_KEY",
+    apiKey: "sk-dOrflbhoY1LGPWZjajTJ2PogXsCpGX9fWCWMaNNiGQVXC3US",
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
     model: "doubao-1-5-pro-256k-250115",//火山引擎接入点（改成自己的）
-    apiKey: "ARK_API_KEY",
+    apiKey: "8b93cb64-5a2c-42a2-941a-c67dc408ffe1",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
-  },
-  {
-    model: "DeepSeek R1",
-    apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://api.ppinfra.com/v3/openai"
-  },
-  {
-    model: "DeepSeek V3",
-    apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://api.ppinfra.com/v3/openai"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
