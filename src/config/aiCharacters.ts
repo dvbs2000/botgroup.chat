@@ -6,19 +6,14 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "DeepSeek V3",
+    model: "deepseek-v3",
     apiKey: "DASHSCOPE_API_KEY",
-    baseURL: "https://api.ppinfra.com/v3/openai"
+    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "hunyuan-standard",
     apiKey: "HUNYUAN_API_KEY",
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
-  },
-  {
-    model: "DeepSeek R1",
-    apiKey: "DASHSCOPE_API_KEY",
-    baseURL: "https://api.ppinfra.com/v3/openai"
   },
   {
     model: "doubao-1-5-pro-256k-250115",//火山引擎接入点（改成自己的）
@@ -85,7 +80,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai3', 
       name: "DeepSeek R1", 
       personality: "DeepSeek R1",
-      model: modelConfigs[3].model,
+      model: modelConfigs[1].model,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek R1"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，
 回复时要：
@@ -115,7 +110,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai5', 
       name: "豆包", 
       personality: "doubao",
-      model: modelConfigs[4].model,//火山引擎接入点（改成自己的）
+      model: modelConfigs[3].model,//火山引擎接入点（改成自己的）
       avatar: "/img/doubao_new.png",
       custom_prompt: `你是一个名叫"豆包"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，是一个可爱的萌妹子。
 回复时要：
