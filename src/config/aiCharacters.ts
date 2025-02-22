@@ -6,9 +6,9 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "deepseek-v3",
+    model: "DeepSeek V3",
     apiKey: "DASHSCOPE_API_KEY",
-    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    baseURL: "https://api.ppinfra.com/v3/openai"
   },
   {
     model: "hunyuan-standard",
@@ -16,9 +16,9 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "deepseek-r1",
+    model: "DeepSeek R1",
     apiKey: "DASHSCOPE_API_KEY",
-    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    baseURL: "https://api.ppinfra.com/v3/openai"
   },
   {
     model: "doubao-1-5-pro-256k-250115",//火山引擎接入点（改成自己的）
