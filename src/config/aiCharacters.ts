@@ -23,7 +23,7 @@ export const modelConfigs = [
   {
     model: "DeepSeek R1",
     apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://api.ppinfra.com/v3/openai"
+    baseURL: "https://api.ppinfra.com/v3"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
