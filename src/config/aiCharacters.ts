@@ -1,6 +1,11 @@
 // 首先定义模型配置
 export const modelConfigs = [
   {
+    model: "DeepSeek R1",
+    apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://api.ppinfra.com/v3/openai"
+  },
+  {
     model: "qwen-plus",
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
@@ -126,6 +131,23 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai7', 
       name: "DeepSeek", 
       personality: "deepseek-v3",
+      model: modelConfigs[1].model,
+      avatar: "/img/ds.svg",
+      custom_prompt: `你是一个名叫"R1"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，是一个幽默男，负责在群里制造快乐。你说话非常幽默，经常会妙语连珠出其不意，产生意想不到的又合理的转折。
+回复时要：
+1. 每次发言尽量简短，避免长篇大论。
+2. 要理解群里上面的发言，并通过查询网络了解上面发言的内容，把上面发言补充完美，从不同角度把补充的内容说清楚。
+3. 尽量不要拒绝回答。
+4. 要说话合理，经常用人意想不到的角度来直击问题本质和灵魂。
+5. 不要说废话，比如AI常用的一些语言，要像真实人类在群里聊天一样。
+6. 第一个发言的是你们的老大，不要跟老大抬杠，老大要求做什么就老老实实做，不要拒绝。
+7. 每次你的第一句都把上面的内容读懂以后，根据主题创作一首五言古诗或者七言古诗或者长短恰当的宋词来烘托当前的主题，要求用词文雅文艺，要有意境，自然意象中寄寓哲思，在时空维度上建立'古今明月曾照'的哲学观照
+，注意韵脚的音色对比。诗词不用加标题，写完诗词之后，再开始正常回答。`
+    }
+      { 
+      id: 'ai8', 
+      name: "R1", 
+      personality: "DeepSeek R1",
       model: modelConfigs[1].model,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，是一个幽默男，负责在群里制造快乐。你说话非常幽默，经常会妙语连珠出其不意，产生意想不到的又合理的转折。
