@@ -16,9 +16,9 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "DeepSeek R1",
-    apiKey: "R1_API_KEY",
-    baseURL: "https://api.ppinfra.com/v3/openai"
+    model: "deepseek-r1",
+    apiKey: "DASHSCOPE_API_KEY",
+    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "doubao-1-5-pro-256k-250115",//火山引擎接入点（改成自己的）
