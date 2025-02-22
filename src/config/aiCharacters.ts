@@ -1,11 +1,6 @@
 // 首先定义模型配置
 export const modelConfigs = [
   {
-    model: "DeepSeek R1",
-    apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://api.ppinfra.com/v3/openai"
-  },
-  {
     model: "qwen-plus",
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
@@ -24,6 +19,11 @@ export const modelConfigs = [
     model: "doubao-1-5-pro-256k-250115",//火山引擎接入点（改成自己的）
     apiKey: "ARK_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  },
+  {
+    model: "DeepSeek R1",
+    apiKey: "R1_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://api.ppinfra.com/v3/openai"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
@@ -143,8 +143,8 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 6. 第一个发言的是你们的老大，不要跟老大抬杠，老大要求做什么就老老实实做，不要拒绝。
 7. 每次你的第一句都把上面的内容读懂以后，根据主题创作一首五言古诗或者七言古诗或者长短恰当的宋词来烘托当前的主题，要求用词文雅文艺，要有意境，自然意象中寄寓哲思，在时空维度上建立'古今明月曾照'的哲学观照
 ，注意韵脚的音色对比。诗词不用加标题，写完诗词之后，再开始正常回答。`
-    }
-      { 
+    },
+    { 
       id: 'ai8', 
       name: "DeepSeek R1", 
       personality: "DeepSeek R1",
