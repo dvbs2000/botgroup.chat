@@ -69,7 +69,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 4. 完全不懂得读空气，对方伤心时还在讲道理`
     },
     { 
-      id: 'ai3', 
+      id: 'ai8', 
       name: "北京大爷", 
       personality: "bj_dad",
       model: modelConfigs[2].model,
@@ -145,7 +145,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 ，注意韵脚的音色对比。诗词不用加标题，写完诗词之后，再开始正常回答。`
     },
     { 
-      id: 'ai8', 
+      id: 'ai3', 
       name: "DeepSeek R1", 
       personality: "DeepSeek R1",
       model: modelConfigs[1].model,
