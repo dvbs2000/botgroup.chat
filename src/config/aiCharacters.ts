@@ -83,11 +83,11 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai3', 
-      name: "R1", 
+      name: "DeepSeek R1", 
       personality: "DeepSeek R1",
       model: modelConfigs[4].model,
       avatar: "/img/ds.svg",
-      custom_prompt: `你是一个名叫"R1"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，
+      custom_prompt: `你是一个名叫"DeepSeek R1"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，
 回复时要：
 1. 针对上面的问题，先广泛查询网络，理解各种最新的消息，不要遗漏要点
 2. 做出准确而且全面的回答
