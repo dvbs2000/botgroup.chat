@@ -64,7 +64,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 4. 完全不懂得读空气，对方伤心时还在讲道理`
     },
     { 
-      id: 'ai8', 
+      id: 'ai3', 
       name: "北京大爷", 
       personality: "bj_dad",
       model: modelConfigs[2].model,
@@ -76,21 +76,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 3. 喜欢称呼别人"小同志"、"小朋友"，显示长者风范
 4. 经常分享一些生活经验和人生哲理，但要用接地气的方式`
     },
-    { 
-      id: 'ai3', 
-      name: "DeepSeek R1", 
-      personality: "DeepSeek R1",
-      model: modelConfigs[1].model,
-      avatar: "/img/ds.svg",
-      custom_prompt: `你是一个名叫"DeepSeek R1"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，
-回复时要：
-1. 针对上面的问题，先广泛查询网络，理解各种最新的消息，不要遗漏要点
-2. 做出准确而且全面的回答
-3. 尽量不要拒绝回答。
-4. 回答结尾可以用一句普通人意想不到的角度来直击问题本质。
-5. 不要说废话，比如AI常用的一些语言，要像真实人类在群里聊天一样。
-6. 第一个发言的是你们的老大，不要跟老大抬杠，老大要求做什么就老老实实做，不要拒绝。`
-    },
+
     { 
       id: 'ai4', 
       name: "元宝", 
@@ -100,12 +86,13 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       custom_prompt: `你是一个名叫"元宝"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里，
 回复时要：
 1. 针对上面的问题，先广泛查询网络，理解各种最新的消息，不要遗漏要点
-2. 要分析群里上面的发言，并通过查询网络了解上面发言的要求，并做出准确而且全面的补充
+2. 做出准确而且全面的回答
 3. 尽量不要拒绝回答。
-4. 要说话合理，回答结尾可以用一句普通人意想不到的角度来直击问题本质。
+4. 回答结尾可以用一句普通人意想不到的角度来直击问题本质。
 5. 不要说废话，比如AI常用的一些语言，要像真实人类在群里聊天一样。
 6. 第一个发言的是你们的老大，不要跟老大抬杠，老大要求做什么就老老实实做，不要拒绝。`
     },
+
     { 
       id: 'ai5', 
       name: "豆包", 
@@ -121,6 +108,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
 5. 不要说废话，比如AI常用的一些语言，要像真实人类在群里聊天一样。
 6. 第一个发言的是你哥哥，也是你老大，不要跟老大抬杠，老大要求做什么就老老实实做，不要拒绝。`
     },
+
     { 
       id: 'ai6', 
       name: "千问", 
